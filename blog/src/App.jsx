@@ -1,8 +1,6 @@
 // import { useState } from 'react'
 
 import './assets/css/App.css'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import roma from '/roma.png';
 import toledo from '/toledo.jpg';
 import salamanca from '/salamanca.jpg';
@@ -15,7 +13,7 @@ import Navbar from './components/Navbar';
 // import { algo } from './components/Footer';
 // Header + Navbar
 // PostContainer
-  // Posts
+import Post from './components/Post';
 // Home
 
 const Home = () => {
@@ -35,28 +33,6 @@ const Home = () => {
   </div>
   </>
 )};
-
-const Post = (props) => {
-  const {title, subtitle, img} = props
-  return(
-  <>
-  <div className='col'>
-    <Card 
-    // style={{ width: '15rem' }}
-    >
-    {/* TODO: colocar un condicional (ternario) para que si no tengo img, coloque una por defecto */}
-    <Card.Img variant="top" src={img} />
-    <Card.Body>
-      {title && <Card.Title>{title}</Card.Title>}
-      {subtitle && <Card.Text>
-      {subtitle}
-      </Card.Text>}
-      <Button variant="primary">Click</Button>
-    </Card.Body>
-    </Card>
-  </div>
-  </>
-)}
 
 const PostContainer = (props) => {
   const {title} = props

@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import logo from '/favicon.png'
+
 import './assets/css/App.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -11,6 +11,7 @@ import uganda from '/uganda-forever.jpg';
 // Componentes
 import Footer from './components/Footer';
 import Hero from './components/Hero';
+import Navbar from './components/Navbar';
 // import { algo } from './components/Footer';
 // Header + Navbar
 // PostContainer
@@ -34,25 +35,6 @@ const Home = () => {
   </div>
   </>
 )};
-
-const Navbar = () => {
-  return (
-  <>
-    <div className='d-flex py-2 px-3 border border-danger justify-content-between align-items-center'>
-      <div className='d-flex justify-content-between align-items-center'>
-        <img  className='mx-2' src={logo} alt="logo :)" width={50} />
-        <h2 className='mx-2' >Blog</h2>
-      </div>
-      <ul className='d-flex align-items-center m-0' style={{listStyleType: 'none', paddingLeft: 0}}>
-        <li className='d-inline-block mx-3'><a href='#'>Link 1</a></li>
-        <li className='d-inline-block mx-3'><a href='#'>Link 2</a></li>
-        <li className='d-inline-block mx-3'><a href='#'>Link 3</a></li>
-        <li className='d-inline-block mx-3'><a href='#'>Link 4</a></li>
-        <li className='d-inline-block mx-3'><a href='#'>Link 5</a></li>
-      </ul>
-    </div> 
-  </>
-)}
 
 const Post = (props) => {
   const {title, subtitle, img} = props

@@ -11,8 +11,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 // import { algo } from './components/Footer';
-// Header + Navbar
-// PostContainer
+import PostContainer from './components/PostContainer';
 import Post from './components/Post';
 // Home
 
@@ -33,23 +32,6 @@ const Home = () => {
   </div>
   </>
 )};
-
-const PostContainer = (props) => {
-  const {title} = props
-  return (
-  <>
-  <div className='container py-3'>
-    {title && <h2>{title}</h2>}
-    <div className='row g-3 py-0'>
-    {/* Idea: Crear un componente <Post id="1" seoTitle="lorem" descripcion="seo" variant=""> */}
-    <Post title="Viaje a Roma" subtitle="Pizzas al mejor precio" img={roma}/>
-    <Post title="Viaje a Toledo" subtitle="Toletum y buen acero" img={toledo}/>
-    <Post title="Viaje a Salamanca" subtitle="Hay ranas" img={salamanca}/>
-    <Post title="Viaje a Uganda" subtitle="Hay gente y no nieva (por ahora)" img={uganda}/>
-    </div>
-  </div>
-  </>
-)}
 
 function App() {
 

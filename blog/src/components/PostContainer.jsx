@@ -12,10 +12,11 @@ const PostContainer = (props) => {
     {title && <h2>{title}</h2>}
     <div className='row g-3 py-0'>
     {/* Idea: Crear un componente <Post id="1" seoTitle="lorem" descripcion="seo" variant=""> */}
-    <Post title="Viaje a Roma" subtitle="Pizzas al mejor precio" img={roma}/>
-    <Post title="Viaje a Toledo" subtitle="Toletum y buen acero" img={toledo}/>
-    <Post title="Viaje a Salamanca" subtitle="Hay ranas" img={salamanca}/>
-    <Post title="Viaje a Uganda" subtitle="Hay gente y no nieva (por ahora)" img={uganda}/>
+    {/* 1. Leer el JSON y seleccionar un section */}
+
+    {/* 2. Bucle en ese array */}
+
+    {/* 3. Si no hay contenido "Aún no hay posts" */}
     </div>
   </div>
   </>

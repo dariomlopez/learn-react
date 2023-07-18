@@ -28,7 +28,7 @@ const PostContainer = (props) => {
       />)}
     </div>}
     {/* 3. Si no hay contenido "Aún no hay posts" */}
-    {!posts && <p className='row text-center'>Aún no hay posts en esta sección.</p>}
+    {!posts && <p className='mx-auto text-center'>Aún no hay posts en esta sección.</p>}
   </div>
   </>
 )}

@@ -15,6 +15,7 @@ const Home = () => {
       <PostContainer id="1" title="Últimos Posts" />
       <PostContainer id="2" title="Guías" />
       <PostContainer id="3" title="Consejos" />
+      <PostContainer id="4" title="Sección sin contenido" />
       <Footer />
     </main>
   </div>

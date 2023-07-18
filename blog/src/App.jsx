@@ -10,7 +10,12 @@ import uganda from '/uganda-forever.jpg';
 
 // Componentes
 import Footer from './components/Footer';
-import { algo } from './components/Footer';
+import Hero from './components/Hero';
+// import { algo } from './components/Footer';
+// Header + Navbar
+// PostContainer
+  // Posts
+// Home
 
 const Home = () => {
   return (
@@ -35,7 +40,7 @@ const Navbar = () => {
   <>
     <div className='d-flex py-2 px-3 border border-danger justify-content-between align-items-center'>
       <div className='d-flex justify-content-between align-items-center'>
-        <img  className='mx-2' src={logo} alt="logo :)" width={40} />
+        <img  className='mx-2' src={logo} alt="logo :)" width={50} />
         <h2 className='mx-2' >Blog</h2>
       </div>
       <ul className='d-flex align-items-center m-0' style={{listStyleType: 'none', paddingLeft: 0}}>
@@ -46,28 +51,6 @@ const Navbar = () => {
         <li className='d-inline-block mx-3'><a href='#'>Link 5</a></li>
       </ul>
     </div> 
-  </>
-)}
-const Hero = () => {
-  // Fuente: https://mdbootstrap.com/docs/react/extended/hero/
-  return (
-  <>
-  <div
-    className='p-0 text-center bg-image'
-    style={{ backgroundImage: "url('https://mdbootstrap.com/img/new/slides/041.webp')", height: 400 }}
-      >
-      <div className='mask' style={{ height: '100%', width: '100%', backgroundColor: 'rgba(0, 0, 0, 0.45)' }}>
-        <div className='d-flex justify-content-center align-items-center h-100'>
-          <div className='text-white'>
-            <h1 className='mb-3'>Heading</h1>
-            <h4 className='mb-3'>Subheading</h4>
-            <a className='btn btn-outline-light btn-lg' href='#!' role='button'>
-              Call to action
-            </a>
-          </div>
-        </div>
-      </div>
-  </div> 
   </>
 )}
 

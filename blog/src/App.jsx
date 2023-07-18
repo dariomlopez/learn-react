@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import logo from '/favicon.png'
-import './App.css'
+import './assets/css/App.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import roma from '/roma.png';

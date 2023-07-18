@@ -12,9 +12,9 @@ const Home = () => {
     </header>
     <main>
       <Hero />
-      <PostContainer title="Últimos Posts" />
-      <PostContainer title="Guías" />
-      <PostContainer title="Consejos" />
+      <PostContainer id="1" title="Últimos Posts" />
+      <PostContainer id="2" title="Guías" />
+      <PostContainer id="3" title="Consejos" />
       <Footer />
     </main>
   </div>

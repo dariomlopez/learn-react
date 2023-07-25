@@ -1,9 +1,10 @@
 import logo from '/favicon.png'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
   <>
-    <div className='d-flex py-2 px-3 border border-danger justify-content-between align-items-center'>
+    <div className='d-flex py-2 px-3 justify-content-between align-items-center'>
       <div className='d-flex justify-content-between align-items-center'>
         <img  className='mx-2' src={logo} alt="logo del blog" width={50} />
         <h2 className='mx-2' >Blog</h2>
@@ -13,7 +14,7 @@ const Navbar = () => {
         <li className='d-inline-block mx-3'><a href='#'>Link 2</a></li>
         <li className='d-inline-block mx-3'><a href='#'>Link 3</a></li>
         <li className='d-inline-block mx-3'><a href='#'>Link 4</a></li>
-        <li className='d-inline-block mx-3'><a href='#'>Link 5</a></li>
+        <li className='d-inline-block mx-3'><Link to='crear'>Crear Post</Link ></li>
       </ul>
     </div> 
   </>

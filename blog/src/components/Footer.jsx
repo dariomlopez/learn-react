@@ -1,18 +1,16 @@
-// Ejemplo de export sin default:
-export function algo() {
-  return <><p>Cosas</p></>
-}
 // El Footer se exporta con default
 // Más info: https://react.dev/learn/importing-and-exporting-components
 const Footer = () => {
   // Fuente: https://mdbootstrap.com/docs/standard/navigation/footer#subsection-links
   return (
   <>
-  <div className='border border-danger'>
-  <footer  className="text-center text-lg-start" style={{backgroundColor: "rgba(0, 0, 0, 0.1)"}}>
+  <footer  className="text-center text-lg-center" 
+  style={{
+    backgroundColor: "rgba(0, 0, 0, 0.1)",  
+    bottom: "0"}}>
   
   <div  className="container py-4" >
-    <div  className="row"> 
+    <div  className="row justify-content-center"> 
       <div  className="col-lg-3 col-md-6 mb-4 mb-md-0">
         <h5  className="text-uppercase">Col 1</h5>
         <ul  className="list-unstyled mb-0">
@@ -32,8 +30,8 @@ const Footer = () => {
       </div>
        
       <div  className="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5  className="text-uppercase mb-0">Col 2</h5>
-        <ul  className="list-unstyled">
+        <h5  className="text-uppercase">Col 2</h5>
+        <ul  className="list-unstyled mb-0">
           <li>
             <a href="#!"  className="text-dark">Link 1</a>
           </li>
@@ -67,7 +65,7 @@ const Footer = () => {
         </ul>
       </div>
     
-      <div  className="col-lg-3 col-md-6 mb-4 mb-md-0">
+      {/* <div  className="col-lg-3 col-md-6 mb-4 mb-md-0">
         <h5  className="text-uppercase mb-0">Col 4</h5>
         <ul  className="list-unstyled">
           <li>
@@ -83,7 +81,7 @@ const Footer = () => {
             <a href="#!"  className="text-dark">Link 4</a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div> 
   </div>
 
@@ -92,8 +90,7 @@ const Footer = () => {
     <a  className="text-dark" href="#!">MiBlog.com</a>
   </div>
   
-</footer> 
-  </div>
+  </footer> 
   </>
 )}
 
